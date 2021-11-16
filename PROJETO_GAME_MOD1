@@ -79,7 +79,7 @@ def jogador_morreu_torre():
 
 def game_01() -> object:
     print('=' * 200)
-    resposta = input("está andando muito atento pela cidade"
+    resposta = input("você está andando muito atento pela cidade, "
                      "\ne escuta gritos esqusitos não muito longe de você,"
                      "\ne agora ?\n A - pega sua arma\n B - corre para outra direção \nDigite A ou B:").upper()
     print("=" * 200)
