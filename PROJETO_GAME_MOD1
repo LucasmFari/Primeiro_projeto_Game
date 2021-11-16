@@ -322,10 +322,10 @@ def jogador_rua():
     resposta = input("você conseguiu pousar ! \nA - foi direto em casa. \nB - talvez agora seja melhor pegar um carro,"
                      " para procurar sua esposa!! \nC - um filme passa na sua cabeça, decide ir na delegacia. \nDigite A, B OU C:").upper()
     if resposta == 'A':
-        print("foi na emoção e acabou morrendo, tinha zumbi dentro da casa!!")
+        print("foi na emoção e acabou morrendo, tinha um zumbi dentro da casa!!")
         jogador_morreu03()
     elif resposta == 'B':
-        print("o carro estava ruim, ficou de costas e um zumbi te agarra!")
+        print("o carro estava ruim, ficou de costas e um zumbi te agarrou!")
         jogador_morreu03()
     elif resposta == 'C':
         print("boa escolha, lá pegará armas, \n assim conseguirá se defender, todo equipado se sairá melhor!")
