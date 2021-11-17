@@ -21,8 +21,8 @@ def endgame():
     resposta = (input('\n\nDigite j para jogar denovo! :')).lower().strip().split()[0]
     while resposta == 'j':
         main()
-    else:
-        print('Então tá, até a próxima.')
+    if resposta != 'j':
+        endgame()
 
 def selecao_personagem():
     user_in = int(input("Selecione seu personagem:\n 1 - will o estrategista\n 2 - jovem acelerado\n 3 - xerife abusado \nDigite 1, 2 ou 3:"))
@@ -46,34 +46,48 @@ def jogador_morreu():
     print("\033[31mum zumbi, morde sua perna, vai sangrar até morrer, lastimável!.\033[0;0m")
     resposta = (input('\n\nDigite j para jogar denovo! :')).lower().strip().split()[0]
     while resposta == 'j':
-        main()
-    else:
-        print("Então tá, até a próxima.")
+        endgame()
+    if resposta != 'j':
+        endgame()
 # Caso o jogador morra PERSOANAGEM1
 def jogador_morre():
     print("\033[31mGAME OVER!\033[0;0m")
     resposta = (input('\n\nDigite j para jogar denovo! :')).lower().strip().split()[0]
     while resposta == 'j':
-        main()
-    else:
-        print("Então tá, até a próxima.")
+        endgame()
+    if resposta != 'j':
+        endgame()
 
 # Caso o jogador morra PERSOANAGEM1
 def jogador_morreu_sniper():
     print("\033[31mO Sniper é certeiro, lhe acerta na cabeça, morte feia demais!!!!!\033[0;0m")
     resposta = (input("\033[31mGame Over!\033[0;0m\n\nDigite j para jogar denovo! :")).lower()
     while resposta == 'j':
-        main()
-    else:
-        print("Então tá, até a próxima.")
+        endgame()
+    if resposta != 'j':
+        endgame()
 # Caso o jogador morra PERSOANAGEM1
 def jogador_morreu_torre():
     print("\033[31msuas pernas quebram, e também vai sangrar até morrer, lastimável!.\033[0;0m")
     resposta = (input('\n\nDigite j para jogar denovo! :')).lower().strip().split()[0]
     while resposta == 'j':
-        main()
-    else:
-        print("Então tá, até a próxima.")
+        endgame()
+    if resposta != 'j':
+        endgame()
+#------------------------------------------------------------------------------------------------------
+#comentario para o jogador voltar a jogar !!!!!!
+#exemplo
+
+#def jogador_morreu03():  
+#   print("\033[31mé Xerife, não foi dessa vez!!\033[0;0m")
+#  resposta = (input('\n\nDigite j para jogar denovo! :')).lower().strip().split()[0]
+# while resposta == 'j':
+#    main()
+#if resposta != 'j':
+#    endgame()
+#-------------------------------------------------------------------------------------------------------
+
+
 
 # História personagem1
 
@@ -168,18 +182,19 @@ def jogador_foge():
 #história personagem 2
 def endgame():
     resposta = (input('\n\nDigite j para jogar denovo! :')).lower().strip().split()[0]
-    if resposta == 'j':
+    while resposta == 'j':
         main()
-    else:
-        print('Então tá, até a próxima.')
+    if resposta != 'j':
+        endgame()
 
 def jogador_morreu02():
     print("\033[31mse deu mal meu amigo!!!!!\033[0;0m")
     resposta = (input('\n\nDigite j para jogar denovo! :')).lower().strip().split()[0]
     while resposta == 'j':
-        main()
-    else:
-        print("Então tá, até a próxima.")
+        endgame()
+    if resposta != 'j':
+        endgame()
+
 
 # História personagem2
 
@@ -276,16 +291,16 @@ def endgame():
     resposta = (input('\n\nDigite j para jogar denovo! :')).lower().strip().split()[0]
     if resposta == 'j':
         main()
-    else:
-        print('Então tá, até a próxima.')
+    if resposta != 'j':
+        endgame()
 
 def jogador_morreu03():
     print("\033[31mé Xerife, não foi dessa vez!!\033[0;0m")
     resposta = (input('\n\nDigite j para jogar denovo! :')).lower().strip().split()[0]
-    if resposta == 'j':
-        main()
-    else:
-        print("Então tá, até a próxima.")
+    while resposta == 'j':
+        endgame()
+    if resposta != 'j':
+        endgame()
 
 def game_03() -> object:
     print('=' * 150)
